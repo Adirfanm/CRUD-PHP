@@ -103,9 +103,14 @@ if ( isset($_POST["login"]) ) {
         </li>
     </ul>
 </form>
+<<<<<<< HEAD
 
 <p>belum punya akun?</p>
 <a href="registrasi.php">ke halaman registrasi</a>
+=======
+<p>belum punya akun?</p>
+<a href="registrasi.php">ke halama registrasi</a>
+>>>>>>> f6a628d028768593f8c1ea2d6e86cd47862d4d91
     
 </body>
 </html>

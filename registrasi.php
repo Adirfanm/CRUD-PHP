@@ -58,8 +58,12 @@ if ( isset($_POST["register"])) {
 
         </ul>
     </form>
+<<<<<<< HEAD
 
     <a href="login.php">ke halaman login</a>
+=======
+    <a href="login.php">ke halama login</a>
+>>>>>>> f6a628d028768593f8c1ea2d6e86cd47862d4d91
     
 </body>
 </html>
