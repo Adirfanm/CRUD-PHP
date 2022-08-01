@@ -58,6 +58,7 @@ if ( isset($_POST["register"])) {
 
         </ul>
     </form>
+    <a href="login.php">ke halama login</a>
     
 </body>
 </html>

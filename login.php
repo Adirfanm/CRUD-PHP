@@ -103,6 +103,8 @@ if ( isset($_POST["login"]) ) {
         </li>
     </ul>
 </form>
+<p>belum punya akun?</p>
+<a href="registrasi.php">ke halama registrasi</a>
     
 </body>
 </html>
