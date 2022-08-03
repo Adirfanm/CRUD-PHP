@@ -13,9 +13,9 @@ $(document).ready(function () {
 
     //$.get()
     $.get("ajax/siswa.php?keyword=" + $("#keyword").val(), function (data) {
-      
-        $("#container").html(data);
-        $(".load").hide();
+
+      $("#table-row").html(data);
+      $(".load").hide();
 
     });
 
