@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(to left top, #fba3ec, #cbb0ff, #8fbdff, #4dc6ff, #12caeb);
+}
+
+.regis-form {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.btn-daftar {
+    background-color: #12caeb;
+    color: #fff;
+}

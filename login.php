@@ -71,12 +71,13 @@ if (isset($_POST["login"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row text-center my-5">
+    <div class="container py-5">
+        <div class="row text-center text-white my-3">
             <h1>Halaman Login</h1>
         </div>
 
@@ -84,8 +85,8 @@ if (isset($_POST["login"])) {
             <p style="color: red; font-style: italic;">Username atau Pasword salah</p>
         <?php endif;  ?>
 
-        <div class="row d-flex flex-column">
-            <div class="col-md-8 mx-auto">
+        <div class="row d-flex flex-column px-2">
+            <div class="col-md-5 login-form mx-auto p-5">
                 <form action="" method="post">
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
@@ -99,12 +100,12 @@ if (isset($_POST["login"])) {
                         <input type="checkbox" name="remember" class="form-check-input" id="remember">
                         <label class="form-check-label" for="remember">Remember me!</label>
                     </div>
-                    <button type="submit" name="login" class="btn btn-primary">Login</button>
+                    <button type="submit" name="login" class="btn btn-login mt-3">Login</button>
                 </form>
-            </div>
-            <div class="col-md-8 mx-auto text-end">
-                <p>belum punya akun?</p>
-                <a href="registrasi.php">Ke halaman registrasi</a>
+                <div class="col mx-auto mt-3 text-end">
+                    <p class="mb-1">belum punya akun?</p>
+                    <a href="registrasi.php">Ke halaman registrasi</a>
+                </div>
             </div>
         </div>
     </div>

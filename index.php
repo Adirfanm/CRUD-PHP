@@ -37,6 +37,14 @@ if (isset($_POST["cari"])) {
             display: none;
         }
 
+        @media screen and (max-width: 576px) {
+            .table-row {
+                min-width: 100vw;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
         @media print {
 
             .logout,
@@ -62,13 +70,11 @@ if (isset($_POST["cari"])) {
             </div>
         </div>
 
-
-
         <!-- tombol tambah data -->
         <a href="tambah.php" class="tambah btn btn-success">Tambah Data Siswa</a>
         <!-- live search fitur-->
         <form action="" method="post" class="search">
-            <div class="col-md-6 position-relative">
+            <div class="col-10 col-md-6 position-relative">
                 <div class="input-group my-3">
                     <input type="text" class="form-control" name="keyword" autofocus placeholder="Masukkan keyword pencarian" autocomplete="off" id="keyword">
                     <button class="btn btn-primary" type="submit" name="cari" id="tombol-cari">Cari</button>
@@ -77,7 +83,7 @@ if (isset($_POST["cari"])) {
             </div>
         </form>
 
-        <div class="row" id="table-row">
+        <div class="row table-row overflow-scroll" id="table-row">
             <table class="table table-responsive table-striped">
                 <tr>
                     <th>No.</th>
@@ -93,7 +99,7 @@ if (isset($_POST["cari"])) {
                     <tr>
                         <td><?= $i  ?></td>
                         <td class="aksi">
-                            <a href="ubah.php?id=<?= $row["id"]; ?>" class="btn btn-outline-info">Ubah</a>
+                            <a href="ubah.php?id=<?= $row["id"]; ?>" class="btn btn-outline-info px-3">Ubah</a>
                             <a href="hapus.php?id=<?= $row["id"];  ?>" class="btn btn-outline-secondary" onclick="return confirm('yakin ingin menghapus?');">Hapus</a>
                         </td>
                         <td><img src="img/<?= $row["gambar"]; ?>" alt="" width="100px"></td>

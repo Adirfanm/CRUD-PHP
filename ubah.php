@@ -92,9 +92,6 @@ if (isset($_POST["submit"])) {
         </div>
     </div>
 
-
-
-
 </body>
 
 </html>
